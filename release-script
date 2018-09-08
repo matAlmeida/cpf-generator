@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Clean dist Folder
+rm dist/* -rf
+
+# Build Dist Files
+python3 setup.py sdist bdist_wheel
+
+# Upload to pypi
+python3 -m twine upload dist/*
