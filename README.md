@@ -1,5 +1,6 @@
 # CPF-Generator
 
+![License](https://img.shields.io/pypi/l/cpf-generator.svg?style=flat)
 ![PyPI](https://img.shields.io/pypi/v/cpf-generator.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cpf-generator.svg)
 ![PyPiStats - Monthly Download](https://img.shields.io/pypi/dm/cpf-generator.svg?style=flat)
