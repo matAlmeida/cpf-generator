@@ -14,7 +14,7 @@ $ pip install cpf-generator
 ## Usage
 
 ```py
-from cpf-generator import CPF
+from cpf_generator import CPF
 
 cpf = CPF.generate() # Will generate a random CPF # EX: 46064927240
 formatedCpf = CPF.formater(cpf) # Will format the CPF to be printed in some place # EX: 460.649.272-40
