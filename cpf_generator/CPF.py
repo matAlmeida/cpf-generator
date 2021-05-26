@@ -44,9 +44,8 @@ def __generateChecksum(base, weights):
         raise Exception('Invalid weight type. Should be an Array like or a Number')
 
 def validate(cpf):
-    # Romove non numeric chars
-    stringCpf = re.sub("[^0-9]", "", str(cpf))
-    
+    stringCpf = unformat(cpf)
+
     if (len(stringCpf) < CPF_LENGHT) or (len(stringCpf) > CPF_LENGHT):
         return False
     elif stringCpf in BLACKLIST:
@@ -95,3 +94,6 @@ def formater(cpf):
     cpf = str(cpf)
 
     return '{0}.{1}.{2}-{3}'.format(cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
+
+def unformat(cpf):
+    return re.sub("[^0-9]", "", str(cpf))
