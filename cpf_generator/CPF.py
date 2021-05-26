@@ -94,7 +94,7 @@ def generate():
 
 @deprecation.deprecated(deprecated_in="2.1.0", removed_in="3.0.0", details="Use the 'format' function instead")
 def formater(cpf):
-    format(cpf)
+    return format(cpf)
 
 def format(cpf):
     cpf = str(cpf)
