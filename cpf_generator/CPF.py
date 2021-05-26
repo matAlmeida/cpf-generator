@@ -1,5 +1,7 @@
 import re
 import random
+import deprecation
+from packaging import version
 
 global CPF_LENGHT
 global BLACKLIST
@@ -90,7 +92,13 @@ def generate():
 
     return baseCpf + str(check1) + str(check2)
 
+@deprecation.deprecated(deprecated_in="2.1.0", removed_in="3.0.0",
+                        current_version=version(__name__),
+                        details="Use the 'format' function instead")
 def formater(cpf):
+    format(cpf)
+
+def format(cpf):
     cpf = str(cpf)
 
     return '{0}.{1}.{2}-{3}'.format(cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
