@@ -16,7 +16,7 @@ BLACKLIST = [
   '77777777777',
   '88888888888',
   '99999999999',
-];
+]
 
 def __numberToWeightArray(weight, length):
     array = []
