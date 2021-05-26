@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cpf_generator",
-    version="2.1.0",
+    version="2.1.1",
     author="Matheus Almeida",
     author_email="mat.almeida@live.com",
     description="Generate, Validate and Format brazilian CPF",
@@ -13,6 +13,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/matalmeida/cpf-generator",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'deprecation'
+    ],
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
